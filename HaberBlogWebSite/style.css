@@ -1,0 +1,241 @@
+/* Genel Ayarlar */
+body {
+    background: linear-gradient(135deg, #f8cdda, #1d2b64); /* Pembe ile lacivert arasında geçiş */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Yatayda ortalama */
+    text-align: center; /* Yazıları ortalama */
+    padding: 20px; /* İçerik kenarlarında boşluk */
+}
+
+
+/* Header */
+header {
+    background-color: #2196F3;
+    padding: 1rem 0;
+}
+
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #0073e6;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    background: linear-gradient(90deg, transparent 50%, #0073e6 50%);
+    background-size: 200%;
+}
+
+header nav ul li a:hover {
+    background-position: -100%;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero Bölümü */
+.hero {
+    background: linear-gradient(90deg, #0073e6, #005bb5);
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* İçerik Alanı */
+.content {
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    border-radius: 8px;
+}
+
+.content h2 {
+    margin-bottom: 1rem;
+    color: #0073e6;
+}
+
+article {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-left: 4px solid #0073e6;
+    border-radius: 4px;
+}
+
+article h3 a {
+    color: white;
+    text-decoration: none;
+}
+
+article h3 a:hover {
+    text-decoration: underline;
+}
+
+
+/* Footer */
+footer {
+    background: linear-gradient(90deg, #333, #444); 
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+}
+
+/* Kategoriler */
+.categories {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.categories li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.categories li a:hover {
+    text-decoration: underline;
+}
+
+/* İletişim Formu */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+form input, form textarea, form button {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #0073e6;
+    outline: none;
+}
+
+form button {
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #005bb5;
+}
+/* Blog Detay Sayfası - Görsellerin Düzenlenmesi */
+
+img {
+    max-width: 100%; 
+    height: auto; 
+    margin-bottom: 20px; 
+    border-radius: 8px; 
+    display: block; 
+    margin-left: auto;  
+    margin-right: auto; 
+}
+
+/* Blog Detayındaki Ana Resim */
+img.main-image {
+    width: 80%; 
+    display: block; 
+    margin: 20px auto; 
+}
+
+/* Blog Detayındaki Küçük Resimler */
+img.small-image {
+    width: 50%; 
+    margin: 20px auto; 
+}
+a {
+    display: inline-block;
+    background-color: #0073e6;
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 30px;
+    margin: 30px auto; /* Butonun üst ve alt marginini artırarak ortalanmasını sağlar */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    text-align: center;
+    width: auto; /* Butonun genişliğini otomatik yap */
+}
+/* Hover efekti */
+a:hover {
+    background-color: #005bb5;
+    transform: scale(1.1);
+}
+main p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #444;
+}
+
+main h1, main h2 {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+main img.main-image {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+}
